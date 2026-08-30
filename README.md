@@ -2,6 +2,12 @@
 
 A web app that scores how well a resume matches a job description and returns actionable feedback. Built with FastAPI + Streamlit, using spaCy and Sentence Transformers for NLP and the Groq API for LLM-generated suggestions.
 
+## Objective
+
+The main objective of this project is to develop an AI-powered ATS Resume Scoring System that helps candidates understand how well their resume matches a specific job description. The system analyzes the resume using Natural Language Processing (NLP), skill and keyword matching, and semantic similarity techniques to generate an ATS score and identify areas that can be improved.
+
+The project aims to make resume screening more understandable and useful for job seekers by providing category-wise analysis and AI-generated suggestions. Instead of only giving a score, the system provides actionable feedback to help users improve their resume's keywords, skills, content, formatting, and overall ATS compatibility.
+
 ## What it does
 
 1. Upload a resume (PDF / DOC / DOCX) and paste a job description.
@@ -93,4 +99,13 @@ streamlit run frontend/streamlit_app.py
 ```
 
 The app opens at `http://localhost:8501`.
+
+
+## Project Summary
+
+The AI Resume ATS System is a web-based application that evaluates a resume against a given job description. Users can upload their resume in PDF, DOC, or DOCX format and provide the job description they are applying for. The system processes the resume, extracts relevant information such as skills and experience, and compares it with the requirements of the job description.
+
+The application combines NLP techniques, Sentence Transformers, semantic similarity, and an LLM to perform resume analysis. It generates an overall ATS score along with a detailed breakdown covering areas such as formatting, keywords, content, skill validation, and ATS compatibility. The system also provides AI-generated suggestions to help users identify missing skills, improve their resume content, and make their resume more relevant to the target job.
+
+The project uses a FastAPI backend and Streamlit frontend, with Supabase for authentication and storing previous analyses. It also supports generating PDF reports of the analysis. Overall, the system is designed to act as an intelligent resume evaluation and optimization tool that helps candidates prepare more targeted and ATS-friendly resumes for specific job opportunities.
 
