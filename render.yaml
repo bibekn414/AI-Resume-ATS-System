@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: ai-resume-ats-backend
+    runtime: python
+    buildCommand: |
+      pip install -r requirements.txt
+      python -m spacy download en_core_web_md
+    startCommand: uvicorn backend.main:app --host 0.0.0.0 --port $PORT
